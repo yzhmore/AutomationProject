@@ -1,0 +1,28 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-web-services'
+	implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+	implementation 'org.webjars.npm:request:2.88.2'
+	implementation 'org.dmfs:httpurlconnection-executor:1.16.2'
+	implementation 'com.google.code.gson:gson:2.8.6'
+	testImplementation 'org.testng:testng:7.4.0'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}
